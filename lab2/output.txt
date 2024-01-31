@@ -1,0 +1,5 @@
+Vector 1: [12, 55, 5]
+Vector 2: [0, 1, 22, 123, 75, 3]
+Vector 3 (copy): [12, 55, 5]
+Vector 3 (move): [0, 1, 22, 123, 75, 3]
+Element at index 1 of Vector 3: 1
