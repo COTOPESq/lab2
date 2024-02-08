@@ -9,7 +9,6 @@ private:
     int size;
 
 public:
-    // Конструкторы и деструктор
     Vector();
     Vector(int* arr, int n);
     Vector(const Vector& other); // Конструктор копирования
@@ -19,7 +18,8 @@ public:
     // Перегрузка операций
     int& operator[](int index);
     Vector& operator=(const Vector& other); // Операция присваивания с копированием
-    Vector& operator=(Vector&& other) noexcept; // Операция присваивания с перемещением
+    Vector& operator=(Vector&& other) noexcept;// Операция присваивания с перемещением
+    Vector& operator++();
 
     // Перегрузка операций вставки и извлечения
     friend std::ostream& operator<<(std::ostream& os, const Vector& vec);

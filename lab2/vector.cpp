@@ -40,6 +40,7 @@ Vector& Vector::operator=(const Vector& other) {
             array[i] = other.array[i];
         }
     }
+    cout << "copy";
     return *this;
 }
 
@@ -51,6 +52,12 @@ Vector& Vector::operator=(Vector&& other) noexcept {
         other.array = nullptr;
         other.size = 0;
     }
+    cout << "move";
+    return *this;
+}
+
+Vector& Vector::operator++() {
+    for (int i = 0; i < size; i++) array[i]++;
     return *this;
 }
 
