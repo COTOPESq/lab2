@@ -26,8 +26,15 @@ int main() {
     // Обращение к элементам
     outputFile << "Element at index 1 of Vector 3: " << vec3[1] << endl;
 
+<<<<<<< HEAD
+    vec3=++vec1;
+    ++vec1;
+    outputFile << "Elements in vector 2 + 1: " << vec3 << endl;
+    vec2++;
+=======
     ++vec1;
     ++vec2;
+>>>>>>> c512b9c3d77db317ac7e3bd65929cea04fced325
     outputFile << "Elements in vector 1 + 1: " << vec1 << endl;
     outputFile << "Elements in vector 2 + 1: " << vec2 << endl;
 

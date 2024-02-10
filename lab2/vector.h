@@ -20,6 +20,10 @@ public:
     Vector& operator=(const Vector& other); // Операция присваивания с копированием
     Vector& operator=(Vector&& other) noexcept;// Операция присваивания с перемещением
     Vector& operator++();
+<<<<<<< HEAD
+    Vector operator++(int);
+=======
+>>>>>>> c512b9c3d77db317ac7e3bd65929cea04fced325
 
     // Перегрузка операций вставки и извлечения
     friend std::ostream& operator<<(std::ostream& os, const Vector& vec);

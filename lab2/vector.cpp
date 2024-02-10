@@ -53,12 +53,25 @@ Vector& Vector::operator=(Vector&& other) noexcept {
         other.size = 0;
     }
     cout << "move";
+<<<<<<< HEAD
+=======
+    return *this;
+}
+
+Vector& Vector::operator++() {
+    for (int i = 0; i < size; i++) array[i]++;
+>>>>>>> c512b9c3d77db317ac7e3bd65929cea04fced325
     return *this;
 }
 
 Vector& Vector::operator++() {
     for (int i = 0; i < size; i++) array[i]++;
     return *this;
+}
+Vector Vector::operator++(int){
+    Vector copy = *this;
+    for (int i = 0; i < size; i++) array[i]++;
+    return copy;
 }
 
 ostream& operator<<(ostream& os, const Vector& vec) {

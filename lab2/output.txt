@@ -3,5 +3,10 @@ Vector 2: [0, 1, 22, 123, 75, 3]
 Vector 3 (copy): [12, 55, 5]
 Vector 3 (move): [0, 1, 22, 123, 75, 3]
 Element at index 1 of Vector 3: 1
+<<<<<<< HEAD
+Elements in vector 2 + 1: [13, 56, 6]
+Elements in vector 1 + 1: [14, 57, 7]
+=======
 Elements in vector 1 + 1: [13, 56, 6]
+>>>>>>> c512b9c3d77db317ac7e3bd65929cea04fced325
 Elements in vector 2 + 1: [1, 2, 23, 124, 76, 4]
